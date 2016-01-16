@@ -1,4 +1,4 @@
-et!/bin/bash
+#!/bin/bash
 IGNOREDATABASESTRING="information_schema mysql performance_schema";
 
 while getopts "p:u:c:" opt; do
