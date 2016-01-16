@@ -1,4 +1,4 @@
-#!/bin/bash
+et!/bin/bash
 IGNOREDATABASESTRING="information_schema mysql performance_schema";
 
 while getopts "p:u:c:" opt; do
@@ -81,7 +81,7 @@ do
     tmp_database="_fix_charset_$database"
 
     echo "Copying fixed .frm files... "
-    for file in $(ls -1 $DATADIR$tmp_database/*.frm);
+    for file in $DATADIR$tmp_database/*.frm;
     do
         filename=$(basename $file)
         echo -n " " $filename
